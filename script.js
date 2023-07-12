@@ -1,28 +1,9 @@
 const Btn = document.querySelector('.hamburger');
-// const Nav = document.querySelector('nav');
+const popupmenu = document.querySelector(".popup_menu");
 
-function active() {
+function activate() {
 	Btn.classList.toggle('hamburger-active');
-	// Nav.classList.toggle('active');
+	popupmenu.classList.toggle('active');
 }
 
-Btn.addEventListener('click', active);
-
-
-
-
-function CheckPalindrom (samplestring) {
-    let samplestringToLowerCase = samplestring.toLowerCase();
-   
-    let newarr = samplestringToLowerCase.toLowerCase().split("").reverse().join("");
-
-    console.log(newarr);
-
-    if (newarr === samplestringToLowerCase) {
-        console.log(`Podany string: ${samplestring} jest palindromem`)
-    } else {console.log(`Podany string: ${samplestring} nie jest palindromem`)}    
-
-};
-
-
-
+Btn.addEventListener('click', activate);
